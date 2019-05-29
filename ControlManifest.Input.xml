@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ExtendXRM" constructor="ImageCapture" version="0.0.1" display-name-key="ExtendXRM1.ImageCapture1" description-key="Capture image and save in the record" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="ImageLoadControl" display-name-key="ImageCapture_LoadControl" description-key="Button to load Image Control" of-type="SingleLine.TextArea" usage="bound" required="true" />
+    <property name="ImageSnapshot" display-name-key="ImageCapture_Snapshot" description-key="Canvas to show snap shot" of-type="Multiple" usage="bound" required="true" />    
+   
+    <type-group name="TakeSnapshot">
+      <type>SingleLine.TextArea</type>
+    </type-group>
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES-->
+      <css path="css/styles.css" order="1" />
+      
+    </resources>
+  </control>
+</manifest>
